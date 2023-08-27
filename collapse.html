@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap List Group with Collapse</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h2>List Group with Collapse</h2>
+        <div class="list-group" id="accordion">
+            <!-- Item 1 -->
+            <div class="list-group-item">
+                <h3 class="mb-0">
+                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Item 1
+                    </button>
+                </h3>
+                <div id="collapseOne" class="collapse">
+                    <div class="card card-body">
+                        Content for Item 1
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="list-group-item">
+                <h3 class="mb-0">
+                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Item 2
+                    </button>
+                </h3>
+                <div id="collapseTwo" class="collapse">
+                    <div class="card card-body">
+                        Content for Item 2
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="list-group-item">
+                <h3 class="mb-0">
+                    <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        Item 3
+                    </button>
+                </h3>
+                <div id="collapseThree" class="collapse">
+                    <div class="card card-body">
+                        Content for Item 3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (Popper.js is required for Bootstrap's dropdowns and popovers) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
