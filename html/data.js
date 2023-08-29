@@ -3,7 +3,7 @@ $(document).ready(function () {
     //ajax call from demo database to get data
     function getallData() {
         $.ajax({
-            url: "http://demo.eldoradotrucking.com:2222/mkt/getall",
+            url: "52.8.237.158:2222/mkt/getall",
             type: 'get',
             http2: true,
             dataType: 'json',
@@ -25,7 +25,7 @@ $(document).ready(function () {
         $(this).hasClass('status') ? feild = 'Status' : feild = 'contacted_by';
         const data = { id: id, thisField: feild, value: status };
         $.ajax({
-            url: "http://demo.eldoradotrucking.com:2222/mkt/update",
+            url: "52.8.237.158:2222/mkt/update",
             type: 'post',
             http2: true,
             dataType: 'json',
