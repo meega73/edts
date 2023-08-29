@@ -64,25 +64,7 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-        $(document).ready(function () {
-            //ajax call from demo database to get data
-            $.ajax({
-                url: "http://localhost:2222/mkt/getall",
-                type: 'get',
-                http2: true,
-                dataType: 'json',
-                contentType: 'application/json',
-                success: function (result) {
-                    console.log(result);
-                    const accordion = $('#accordion');
-                    accordion.empty();
-                    accordion.append(result);
-
-                }
-            })
-        })
-    </script>
+    <script src="data.js"></script>
 </body>
 
 </html>
